@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorGrayBrackground">#ebebeb</color>
+    <color name="colorGrayText">#979797</color>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorCard">#1e1f68</color>
+    <color name="colorWhite">#ffffff</color>
+</resources>

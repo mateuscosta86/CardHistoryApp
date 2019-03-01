@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:id="@+id/ticketLayout" android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:layout_weight="1"
+                android:background="@color/colorGrayBrackground"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/vermelho" android:id="@+id/imageView4"
+                    android:layout_weight="1" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
+            <TextView
+                    android:text="23 Mar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/txtViewDate" android:layout_weight="1"
+                    app:layout_constraintStart_toEndOf="@+id/imageView4"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.166"
+                    android:layout_marginStart="2dp" android:layout_marginEnd="4dp"/>
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+                android:layout_height="match_parent" android:layout_weight="1"
+                android:layout_width="150dp">
+
+            <TextView
+                    android:text="hgbh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/txtViewAction"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.52"
+                    android:layout_marginStart="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textAlignment="center"/>
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" android:layout_weight="1">
+
+            <TextView
+                    android:text="R$"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/txtViewRs"
+                    android:textSize="11sp"
+                    app:layout_constraintEnd_toStartOf="@+id/txtViewPrice"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:textAlignment="center"
+            />
+            <TextView
+                    android:text="20000,00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp" android:id="@+id/txtViewPrice"
+                    android:textSize="23sp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginRight="20dp" app:layout_constraintVertical_bias="0.444"
+                    android:textAlignment="center"/>
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>
